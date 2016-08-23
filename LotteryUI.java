@@ -4,11 +4,11 @@ import javax.swing.*;
 
 class LotteryUI {
 public static void main(String[] args) {
-   JFrame frame = new JFrame("Have a try");
+   JFrame frame = new JFrame("闷声大发财");
    Container pane = frame.getContentPane();
    
    //create components
-   JTextField result = new JTextField(20);
+   JTextField result = new JTextField(30);
    JButton go = new JButton("GO");
    
    //layout add components
