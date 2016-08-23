@@ -22,17 +22,23 @@ public class lottery implements ActionListener {
         int max2 = 26;
         
         int sp = random.nextInt(max2)%(max2-min+1) + min;
-        output = "special number is "+sp+" - ";
+        output = "special number is "+sp+" regular numbers are ";
         //System.out.println("special number is "+sp);
-        int[] out = new int[6];
+        int[] out = new int[5];
 
         for(int i=0;i<5;i++){
         		
         	while(out[0]==s||out[1]==s||out[2]==s||out[3]==s||out[4]==s)//find if there's any repeat
         		s = random.nextInt(max)%(max-min+1) + min;
         	    out[i]=s;
-        	    output = output+out[i]+" ";
+        	    //output = output+out[i]+" ";
         }
+
+        Arrays.sort(out);
+        
+        for(int i=0;i<5;i++)output = output+out[i]+" ";
+        
         outputtmp.setText(output);
     }
+	
 }
