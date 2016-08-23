@@ -4,7 +4,7 @@ import javax.swing.*;
 
 class LotteryUI {
 public static void main(String[] args) {
-   JFrame frame = new JFrame("吃饭喝粥拼一枪");
+   JFrame frame = new JFrame("Have a try");
    Container pane = frame.getContentPane();
    
    //create components
